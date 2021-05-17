@@ -52,7 +52,7 @@ function router(nav){
         });
     });
 
-    //route for hadnling add author request
+    //route for handling add author request
     adminRouter.post('/addauthor',store.single('image'),function(req,res){
         var item = {
 
