@@ -48,7 +48,7 @@ function router(nav) {
       author: req.body.author,
       genre: req.body.genre,
       description: req.body.description,
-      image: req.body.image
+      image: req.file.filename
     };
     Bookdata.updateOne({ _id: id }, { $set: newbook }, function () {
       res.redirect("/books");
@@ -59,7 +59,7 @@ function router(nav) {
     var newauthor = {
       name: req.body.name,
       description: req.body.description,
-      image: req.body.image
+      image: req.file.filename
     };
     Authordata.updateOne({ _id: id }, { $set: newauthor }, function () {
       res.redirect("/authors");
