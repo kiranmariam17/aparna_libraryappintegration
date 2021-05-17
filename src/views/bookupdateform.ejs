@@ -122,7 +122,7 @@ input[type=submit]:hover {
         <div class="panel-body">
       <!-- form starts here -->
       <div class="row">       
-           <form method="POST" action="/update/book/<%=book._id%>/updated">
+           <form method="POST" action="/update/book/<%=book._id%>/updated" enctype="multipart/form-data">
            
              <div class="sample">
               <label for="title">Book Title</label>

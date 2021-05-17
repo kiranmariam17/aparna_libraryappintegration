@@ -123,7 +123,7 @@ input[type=submit]:hover {
         <div class="panel-body">
       <!-- form starts here -->
       <div class="row">      
-           <form method="POST" action="/update/author/<%=author._id%>/updated">
+           <form method="POST" action="/update/author/<%=author._id%>/updated" enctype="multipart/form-data">
              <div class="sample">
               <label for="name">Author Name</label>
               <input type="text" id="name" name="name" placeholder="Enter Author Name" required >
